@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/Kir73/auth#readme",
   "devDependencies": {
-    "@playwright/test": "^1.50.1",
-    "@types/node": "^22.13.2"
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.2",
+    "typescript": "^5.8.2"
   }
 }

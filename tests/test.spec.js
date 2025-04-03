@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { InventoryPage } = require('../pages/inventory-page');
 
 test('Verify product title, description, price, and add to cart button', async ({ page }) => {
     await page.goto('https://www.saucedemo.com/inventory.html');
@@ -8,6 +9,7 @@ test('Verify product title, description, price, and add to cart button', async (
     const addToCartButton = page.locator('text=Add to cart');
 
  
+    const inventoryPage = new InventoryPage();
     await expect(productTitle).toBeVisible();
     await expect(productTitle).toHaveText('Sauce Labs Backpack');
 
